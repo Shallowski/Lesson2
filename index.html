@@ -4,9 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson</title>
+    <title>Lesson 2</title>
     <link rel="icon" href="#" type="image/png">
     <style>
+        .header,
+        .article {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact {
+            margin: 30px;
+        }
+
         .contact_icon {
             vertical-align: middle;
             margin-right: 5px;
@@ -18,106 +28,125 @@
         }
     </style>
 </head>
-<header>
-    <h1>Hello word</h1>
-    <nav>
-        <ul>
-            <Li><a href="/">Главная</a></Li>
-            <Li><a href="#Frontend">Frontend</a></Li>
-            <Li><a href="#">Основы Html</a></Li>
-        </ul>
-    </nav>
-    <div class="contact">
-        <a class="contact_item" href="tel:+3800000000">Call me +380000000
-            <img class="contact_icon" src="img/phone.png" alt="phone" title="Call me" width="16">
-        </a>
-        <a class="contact_item" href="skype:1111111111111">Write me 111111111111
-            <img class="contact_icon" src="img/skype.png" alt="phone" title="Call me" width="16">
-        </a>
-    </div>
-</header>
-<hr>
-<article>
-    <section>
-        <figure>
-            <img src="img/yeti-html5.png" alt="html" title="yeti" width="500">
-            <figcaption>
-                Lorem ipsum dolor sit amet.
-            </figcaption>
+
+<body>
+    <header class="header">
+        <h1>Hello word</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Главная</a></li>
+                <li><a href="#Frontend">Frontend</a></li>
+                <li><a href="#">Основы Html</a></li>
+            </ul>
+        </nav>
+        <div class="contact">
+            <a class="contact_item" href="tel:+3800000000">Call me +380000000
+                <img class="contact_icon" src="img/phone.png" alt="phone" title="Call me" width="16">
+            </a>
+            <a class="contact_item" href="skype:1111111111111">Write me 111111111111
+                <img class="contact_icon" src="img/skype.png" alt="phone" title="Call me" width="16">
+            </a>
+        </div>
+    </header>
+    <hr>
+    <article class="article">
+        <section class="top">
+            <figure>
+                <img src="img/yeti-html5.png" alt="html" title="yeti" width="500">
+                <figcaption>
+                    Lorem ipsum dolor sit amet.
+                </figcaption>
+            </figure>
+
             <h2 id="Frontend"> Lorem ipsum dolor sit amet.</h2>
-            <p>Lorem ipsum dolor sit, <strong>amet consectetur adipisicing</strong> elit. Tempore, officia.</p>
+            <p>Lorem ipsum dolor sit, <strong>amet consectetur adipisicing</strong> elit. Tempore, officia.
+            </p>
+            <br>
             <blockquote>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, rem.
             </blockquote>
+            <br>
             <dl>
-                <dt><strong>html</strong></dt>
+                <dt><strong>HTML</strong></dt>
                 <dd>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium p</dd>
-                <dt><strong>css</strong></dt>
+                <dt><strong>CSS</strong></dt>
                 <dd>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium p</dd>
                 <dt><strong>JS</strong></dt>
                 <dd>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium p</dd>
             </dl>
-        </figure>
-    </section>
-    <section>
-        <h2>Основы html</h2>
-        <h3>Cсылки</h3>
-        <ol>
-            <li>
-                <a href="https://www.google.com.ua/?hl=ru" target="_blank">ссылка на материал</a>
-            </li>
-        </ol>
-        <iframe src="index.html" frameborder="0" width="500" height="500"></iframe>
 
-        <details>
-            <summary>
-                youtube video
-            </summary>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/OZapGjqE1-M" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </details>
+        </section>
 
-        <form action="#">
-            <h2>Zapolni formu</h2>
-            <div class="form_row">
-                <label for="name">Your name</label>
-                <input type="text" id="name" name="name"><input>
-            </div>
+        <section id="html5">
+            <h2>Основы html5</h2>
 
-            <div class="form_row">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email"><input>
-            </div>
+            <h3>Cсылки</h3>
 
-            <div class="form_row">
-                <label for="date">Data rozhdeniya</label>
-                <input type="date" id="date" name="date"><input>
-            </div>
+            <ol>
+                <li>
+                    <a href="https://www.google.com.ua/?hl=ru" target="_blank">ссылка на материал</a>
+                </li>
+            </ol>
+            <iframe src="index.html" frameborder="0" width="500" height="500"></iframe>
 
+            <details>
+                <summary>
+                    youtube video
+                </summary>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/OZapGjqE1-M" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </details>
 
-            <div class="form_row">
+            <form action="#">
+                <h2>Zapolni formu</h2>
+                <div class="form__row">
+                    <label for="name">Your name</label>
+                    <input type="text" id="name" name="name">
+                </div>
+
+                <div class="form__row">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form__row">
+                    <label for="date">Data rozhdeniya</label>
+                    <input type="date" id="date" name="date">
+                </div>
+
                 <p>Otmette chto vi osvoili</p>
 
-                <div>
+
+                <div class="form__row">
                     <label for="HTML">HTML</label>
-                    <input type="checkbox" id="html" name="skills"><input>
+                    <input type="checkbox" id="html" name="skills">
                 </div>
 
-                <div>
+                <div class="form__row">
                     <label for="CSS">CSS</label>
-                    <input type="checkbox" id="CSS" name="Skills"><input>
+                    <input type="checkbox" id="CSS" name="skills">
                 </div>
-            </div>
 
-            <input type="submit" value="Otpravit formu">
-        </form>
 
-    </section>
-</article>
+                <p>Выберите свою оценку</p>
+                <div class="form__row">
+                    <label for="rating1">8</label>
+                    <input id="rating1" type="radio" name="rating">
+                </div>
+                <div class="form__row">
+                    <label for="rating2">9</label>
+                    <input id="rating2" type="radio" name="rating">
+                </div>
+                <div class="form__row">
+                    <label for="rating3">10</label>
+                    <input id="rating3" type="radio" name="rating">
+                </div>
+                <input type="submit" value="Otpravit formu">
+            </form>
 
-<body>
-
+        </section>
+    </article>
 </body>
 
 </html>
